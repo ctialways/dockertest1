@@ -6,7 +6,7 @@ services:
    - docker
 
 script: sudo docker build -t mynginx .
-        sudo docker run -d -t -p 80:80 mynginx
+        sudo docker run -d -p 80:80 mynginx
         curl localhost:80
 
 
